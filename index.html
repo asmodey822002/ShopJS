@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/jqzoom.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+		<div class="products">
+	<div class="filter">
+		<p>
+			<label for="speed">Выберите валюту</label>
+    		<select name="speed" id="speed">
+    			<option selected="selected">UAH грн</option>
+      			<option>US $</option>
+      			<option>EUR €</option>
+    		</select>
+		</p>
+
+		<p>
+  			<label for="amount">Ценовой диапазон:</label>
+  			<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+			<div id="slider-range"></div>
+		</p>
+
+		<p>
+			Цвет:
+  			<div class="colors">
+  				<div class="col col1"></div>
+  				<div class="col col2"></div>
+  				<div class="col col3"></div>
+  				<div class="col col4"></div>
+  				<div class="col col5"></div>
+  				<div class="col col6"></div>
+  			</div>	
+		</p>
+
+		<p class="ui-widget">
+			<label for="brand">Brand:</label>
+  			<input id="brands">
+  		</p>
+ 
+		<div class="cart">
+			<h3>Ваша Корзина</h3>
+			<p>Ваша корзина пустая</p>
+		</div>
+		
+	</div>
+
+			<div class="product">
+				<h3>Шлем 1</h3>
+				<img src="images/1_1.png" alt="images/1_1.png" class="jqzoom">
+				<div class="price">1 грн</div>
+				<input type="hidden" value="Nike" class="br">
+				<input type="hidden" value="0, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Колеса 1</h3>
+				<img src="images/2.png" alt="images/2.png" class="jqzoom">
+				<div class="price">2000 грн</div>
+				<input type="hidden" value="Nike" class="br">
+				<input type="hidden" value="0, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Велосипед 1</h3>
+				<img src="images/3.png" alt="images/3.png" class="jqzoom">
+				<div class="price">3000 грн</div>
+				<input type="hidden" value="Reebok" class="br">
+				<input type="hidden" value="255, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Кофта 1</h3>
+				<img src="images/4.png" alt="images/4.png" class="jqzoom">
+				<div class="price">4000 грн</div>
+				<input type="hidden" value="Reebok" class="br">
+				<input type="hidden" value="0, 128, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Велосипед 2</h3>
+				<img src="images/5.png" alt="images/5.png" class="jqzoom">
+				<div class="price">5000 грн</div>
+				<input type="hidden" value="Adidas" class="br">
+				<input type="hidden" value="255, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Шлем 2</h3>
+				<img src="images/6.png" alt="images/6.png" class="jqzoom">
+				<div class="price">6000 грн</div>
+				<input type="hidden" value="Puma" class="br">
+				<input type="hidden" value="255, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Шлем 1</h3>
+				<img src="images/1.png" alt="images/1.png" class="jqzoom">
+				<div class="price">1000 грн</div>
+				<input type="hidden" value="Nike" class="br">
+				<input type="hidden" value="0, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Колеса 1</h3>
+				<img src="images/2.png" alt="images/2.png" class="jqzoom">
+				<div class="price">2000 грн</div>
+				<input type="hidden" value="Nike" class="br">
+				<input type="hidden" value="0, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Велосипед 1</h3>
+				<img src="images/3.png" alt="images/3.png" class="jqzoom">
+				<div class="price">3000 грн</div>
+				<input type="hidden" value="Reebok" class="br">
+				<input type="hidden" value="255, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Кофта 1</h3>
+				<img src="images/4.png" alt="images/4.png" class="jqzoom">
+				<div class="price">4000 грн</div>
+				<input type="hidden" value="Reebok" class="br">
+				<input type="hidden" value="0, 128, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Велосипед 2</h3>
+				<img src="images/5.png" alt="images/5.png" class="jqzoom">
+				<div class="price">5000 грн</div>
+				<input type="hidden" value="Adidas" class="br">
+				<input type="hidden" value="255, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+			<div class="product">
+				<h3>Шлем 2</h3>
+				<img src="images/6.png" alt="images/6.png" class="jqzoom">
+				<div class="price">6000 грн</div>
+				<input type="hidden" value="Puma" class="br">
+				<input type="hidden" value="255, 0, 0" class="colo">
+				<input id="spinner" name="value" class="spin" value="1">
+				<div class="addtocart">Add to cart</div>
+			</div>
+	</div>			
+</body>
+</html>
